@@ -1,0 +1,32 @@
+{
+  "name": "cicd-example",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node dev.js",
+    "generate": "node generate.js",
+    "generate-all": "node generate.js && node sitemap.js && node feed.js",
+    "generate-sitemap": "node generate.js && node sitemap.js",
+    "sitemap": "node sitemap.js",
+    "feed": "node feed.js",
+    "backoffice": "node backoffice.js",
+    "test:unit": "jest",
+    "test:e2e": "npx playwright test"
+  },
+  "dependencies": {
+    "rinojs": "^2.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@playwright/test": "^1.52.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.2"
+  }
+}
